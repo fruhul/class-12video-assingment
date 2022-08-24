@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* menu */
+.main-menu{
+    background-color: #3498db;
+}
+.main-menu ul{
+    text-align: center;
+}
+.main-menu ul li{
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    margin-left: -4px;
+   position: relative;
+}
+.main-menu ul li:first-child{
+border-left: 1px solid #ddd;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 22px;
+    padding: 13px 22px;
+    transition: .5s;
+} 
+.main-menu ul li:hover >a{
+    background-color: #2980b9;
+}
+/* Drop down menu */
+.main-menu ul li ul.sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top:1px solid #ddd ;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+
+}
+.main-menu ul li ul.sub-menu li:first-child{
+    border-left: none;
+}
+.main-menu ul li ul.sub-menu li {
+    display: block;
+    border: none;
+    margin-left: 0;
+    width: 195PX;
+    background-color: #3498db;
+    BORDER-BOTTOM: 1px solid #ddd;
+}
+.main-menu ul li ul.sub-menu li a{
+    display: block;
+}
+/* hover */
+.main-menu ul li:hover ul.sub-menu{
+    opacity: 1;
+    visibility:visible;
+    transform: scaleY(1);
+}
+/* social menu */
+.social-menu{}
+.social-menu ul{
+    text-align: center;
+    margin-top: 72px;
+}
+.social-menu ul li{
+    display: inline-block;
+  
+    margin: 13px;
+}
+.social-menu ul li a{
+    font-size: 49px;
+    height: -10px;
+    display: inline-block;
+    color: #fff;
+    background-color: green;
+    padding: 20px 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    transition: .5s;
+
+}
+.social-menu ul li a:hover{
+    background-color: rgb(4, 107, 37);
+    color: rgb(38, 16, 234);
+}
+/* list style */
+.list{
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+.list ul.frist{
+    margin: 50px 0;
+    list-style-image: url("./right-arrow.png");
+}
+.list .sceound{
+    list-style-type:square ;
+}
